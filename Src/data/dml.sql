@@ -32,6 +32,7 @@ INSERT INTO productos (nombre, categoria, precio, stock, proveedor_id) VALUES
 ('Impresora Epson L3150', 'Impresoras', 1200.00, 8, 12),
 ('Cámara Canon EOS', 'Cámaras', 5000.00, 6, 13),
 ('Router TP-Link', 'Redes', 450.00, 22, 14),
+('Disco SSD 2TB', 'Almacenamiento', 1600.00, 3, 15),
 ('Disco SSD 512GB', 'Almacenamiento', 600.00, 28, 15);
 
 -- CLIENTES
