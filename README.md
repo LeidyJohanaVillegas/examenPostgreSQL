@@ -8,7 +8,8 @@
 
 ## Información Base para el examen: 
 
-📌 [Contexto del problema](# 📌 Contexto del Problema) y [especificaciones](# 📋 Especificaciones del Sistema).
+📌 [Contexto del problema](#📌Contexto).
+📌 [especificaciones](#📋Especificaciones).
 
 📌 Modelo E-R [Ver modelo](~/examenPostgreSQL/Src/assets/diagrama_postgresql.png).
 
@@ -16,7 +17,7 @@
 
 📌 [Ejemplo de cómo ejecutar las consultas y el procedimiento almacenado en PostgreSQL](Src/data/procedureAndFunctions.sql).
 
-📌 [Integrantes del examen](#REALIZADO POR: ).
+📌 [Integrantes del examen](#REALIZADO).
 
 
 
