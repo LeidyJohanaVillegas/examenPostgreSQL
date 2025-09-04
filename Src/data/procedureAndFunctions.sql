@@ -36,3 +36,28 @@ BEGIN
 END;
 
 
+-----------------------------------------------------------------------------
+--comprobaciones 
+-----------------------------------------------------------------------------
+
+--verificacion stock del producto
+SELECT stock FROM productos WHERE id = 1;
+-- registrar venta
+SELECT registrar_venta(1, 1, 3, 4500.00);
+-- Última venta registrada
+SELECT * FROM ventas ORDER BY id DESC LIMIT 1;
+
+-- Detalle de la última venta
+SELECT * FROM ventas_detalle ORDER BY venta_id DESC LIMIT 1;
+
+-- Stock actualizado del producto 1
+SELECT stock FROM productos WHERE id = 1;
+
+--el cliente no existe, para comprobar con otro debe cambiar el 999 por otro id
+SELECT registrar_venta(999, 1, 1, 4500.00);
+
+--el producto no existe, para comprobar cambiar el 999 por otro id
+SELECT registrar_venta(1, 999, 1, 100);
+
+-- el stock insuficiente
+SELECT registrar_venta(1, 1, 20, 4500.00);
