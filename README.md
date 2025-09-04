@@ -1,12 +1,28 @@
-# Examen PostgreSQL
-
-## Informacion Base para el examen: Contexto del problema y especificaciones.
+## Examen PostgreSQL.
 
 
-🏪 Gestión de Inventario para una Tienda de Tecnología
+
+# 🏪 Gestión de Inventario para una Tienda de Tecnología.
 
 
-📌 Contexto del Problema
+
+## Información Base para el examen: 
+
+📌 [Contexto del problema](# 📌 Contexto del Problema) y [especificaciones](# 📋 Especificaciones del Sistema).
+
+📌 Modelo E-R [Ver modelo](~/examenPostgreSQL/Src/assets/diagrama_postgresql.png).
+
+📌 Script [db.sql, insert.sql, queries.sql, procedure.sql](Src/data).
+
+📌 [Ejemplo de cómo ejecutar las consultas y el procedimiento almacenado en PostgreSQL](Src/data/procedureAndFunctions.sql).
+
+📌 [Integrantes del examen](#REALIZADO POR: ).
+
+
+
+
+
+## 📌 Contexto del Problema
 
 La tienda TechZone es un negocio dedicado a la venta de productos tecnológicos, desde laptops y teléfonos hasta accesorios y componentes electrónicos. Con el crecimiento del comercio digital y la alta demanda de dispositivos electrónicos, la empresa ha notado la necesidad de mejorar la gestión de su inventario y ventas. Hasta ahora, han llevado el control de productos y transacciones en hojas de cálculo, lo que ha generado problemas como:
 
@@ -21,27 +37,31 @@ La tienda TechZone es un negocio dedicado a la venta de productos tecnológicos,
 Para solucionar estos problemas, TechZone ha decidido implementar una base de datos en PostgreSQL que le permita gestionar de manera eficiente su inventario, las ventas, los clientes y los proveedores.
 
 
-📋 Especificaciones del Sistema
+
+## 📋 Especificaciones del Sistema
 
 La empresa necesita un sistema que registre todos los productos disponibles en la tienda, clasificándolos por categoría y manteniendo un seguimiento de la cantidad en stock. Cada producto tiene un proveedor asignado, por lo que también es fundamental llevar un registro de los proveedores y los productos que suministran.
 
 Cuando un cliente realiza una compra, el sistema debe registrar la venta y actualizar automáticamente el inventario, asegurando que no se vendan productos que ya están agotados. Además, la tienda quiere identificar qué productos se venden más, qué clientes compran con mayor frecuencia y cuánto se ha generado en ventas en un período determinado.
 
-
 El nuevo sistema deberá cumplir con las siguientes funcionalidades:
 
-	1️⃣ Registro de Productos: Cada producto debe incluir su nombre, categoría, precio, stock disponible y proveedor.
+​    1️⃣ Registro de Productos: Cada producto debe incluir su nombre, categoría, precio, stock disponible y proveedor.
 
-	2️⃣ Registro de Clientes: Se debe almacenar la información de cada cliente, incluyendo nombre, correo electrónico y número de teléfono.
+​    2️⃣ Registro de Clientes: Se debe almacenar la información de cada cliente, incluyendo nombre, correo electrónico y número de teléfono.
 
-	3️⃣ Registro de Ventas: Cada venta debe incluir qué productos fueron vendidos, en qué cantidad y a qué cliente.
+​    3️⃣ Registro de Ventas: Cada venta debe incluir qué productos fueron vendidos, en qué cantidad y a qué cliente.
 
-	4️⃣ Registro de Proveedores: La tienda obtiene productos de diferentes proveedores, por lo que es necesario almacenar información sobre cada uno.
+​    4️⃣ Registro de Proveedores: La tienda obtiene productos de diferentes proveedores, por lo que es necesario almacenar información sobre cada uno.
 
-	5️⃣ Consultas avanzadas: Se requiere la capacidad de analizar datos clave como productos más vendidos, ingresos por proveedor y clientes más frecuentes.
+​    5️⃣ Consultas avanzadas: Se requiere la capacidad de analizar datos clave como productos más vendidos, ingresos por proveedor y clientes más frecuentes.
 
-	6️⃣ Procedimiento almacenado con transacciones: Para asegurar que no se vendan productos sin stock, el sistema debe validar la disponibilidad de inventario antes de completar una venta.
+​    6️⃣ Procedimiento almacenado con transacciones: Para asegurar que no se vendan productos sin stock, el sistema debe validar la disponibilidad de inventario antes de completar una venta.
+
+
 
 ## REALIZADO POR: 
-Jorge Andres Chistancho
-Leidy Johana Niño
+
+### Jorge Andres Chistancho
+
+### Leidy Johana Niño
